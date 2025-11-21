@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype UI — Gestion de commandes</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<aside class="col-md-3 col-lg-2 sidebar p-3">
+				<h4 class="fw-bold mb-4">Mon Tableau de Bord</h4>
+                <nav class="nav flex-column gap-2">
+       				 <a href="#" class="nav-link active"><i class="bi bi-bag"></i> Commandes</a>
+      				 <a href="#" class="nav-link"><i class="bi bi-people"></i> Clients</a>
+        			 <a href="#" class="nav-link"><i class="bi bi-box-seam"></i> Produits</a>
+       				 <a href="#" class="nav-link"><i class="bi bi-gear"></i> Paramètres</a>
+    		  </nav>
+
+				
+			</aside>
+			<main class="col-md-9 col-lg-10 p-4">
+				<div class="d-flex justify-content-between align-items-center mb-4">
+        			<h2 class="fw-bold">Commandes</h2>
+        			<button class="btn btn-primary"><i class="bi bi-plus-lg"></i> Nouvelle commande</button>
+      			</div>
+      			<div class="card p-3 mb-4">
+      				<form class="row g-2 align-items-center">
+         				<div class="col-md-6">
+            				<input type="text" class="form-control" placeholder="Rechercher par nom ou N° de commande">
+                       </div>
+         			  <div class="col-md-4">
+           				   	<select class="form-select">
+           				  		<option>Tous les statuts</option>
+              			  	 	<option>En attente</option>
+             					<option>En cours</option>
+           				  	    <option>Livrée</option>
+           					</select>
+         			 </div>
+                     <div class="col-md-2">
+                          <button class="btn btn-outline-secondary w-100">Filtrer</button>
+                      </div>
+                   </form>
+
+      				
+      			</div>
+      			<div class="card shadow-sm">
+      				<div class=" table-responsive ">
+      					<table class=" table table-hover align-midlle mb-3">
+      						<thead class="table-light">
+              					<tr>
+					                <th>#</th>
+					                <th>Client</th>
+					                <th>Date</th>
+					                <th>Montant</th>
+					                <th>Statut</th>
+					                <th>Actions</th>
+              					</tr>
+           					</thead>
+           					<tbody>
+           						<tr>
+					                <td>#1025</td>
+					                <td>Marie K.</td>
+					                <td>01/10/2025</td>
+					                <td>45 000 CFA</td>
+					                <td><span class="badge bg-warning text-dark status-badge">En attente</span></td>
+					                <td>
+					                  <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+					                  <button class="btn btn-sm btn-outline-success"><i class="bi bi-check2"></i></button>
+					                </td>
+             				 </tr>
+             				 <tr>
+					                <td>#1024</td>
+					                <td>Jean P.</td>
+					                <td>30/09/2025</td>
+					                <td>60 000 CFA</td>
+					                <td><span class="badge bg-info text-dark status-badge">En cours</span></td>
+					                <td>
+					                  <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+					                  <button class="btn btn-sm btn-outline-success"><i class="bi bi-check2"></i></button>
+					                </td>
+                              </tr>
+                               <tr>
+					                <td>#1023</td>
+					                <td>Awa D.</td>
+					                <td>29/09/2025</td>
+					                <td>30 500 CFA</td>
+					                <td><span class="badge bg-success status-badge">Livrée</span></td>
+					                <td>
+					                  <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+					                  <button class="btn btn-sm btn-outline-danger"><i class="bi bi-x"></i></button>
+					                </td>
+             				 </tr>
+           					</tbody>
+      						
+      					</table>
+      					
+      				</div>
+      				
+      			</div>
+
+				
+			</main>
+
+		</div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
